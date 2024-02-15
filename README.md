@@ -36,16 +36,33 @@ Split and Merge RGB Image
 Split and merge HSV Image
 
 ##### Program:
-### Developed By:
-### Register Number: 
+```
+import cv2
+import numpy as np
+img = cv2.imread("bad.jpg")
+img = cv2.imread("bad.jpg")
+print(type(img))
+print(img.shape)
+print(img.shape)
+cv2.imshow("window",img)
+cv2.waitKey(0)
+# converting it to grayscale
+img_gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
+print(img_gray.shape)
+img[:,:,2]=0
+cv2.imshow("window",img)
+cv2.waitKey(0)
+```
+### Developed By: Sanjay.G
+### Register Number: 212222230131
 
 
 ## Output:
 
 ### i) Read and display the image
 
-<br>
-<br>
+![image](https://github.com/Sanjay-sg/COLOR_CONVERSIONS_OF-IMAGE/assets/119559022/df49bd24-348a-460d-9f08-94d46466e490)
+
 
 ### ii)Write the image
 
