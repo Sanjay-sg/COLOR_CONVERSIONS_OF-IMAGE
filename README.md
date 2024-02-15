@@ -66,8 +66,8 @@ cv2.waitKey(0)
 
 ### ii)Write the image
 
-<br>
-<br>
+![image](https://github.com/Sanjay-sg/COLOR_CONVERSIONS_OF-IMAGE/assets/119559022/3474658b-342b-433b-825b-e543a6fe9333)
+
 
 ### iii)Shape of the Image
 
