@@ -50,11 +50,6 @@ Anaconda - Python 3.7
 
  ![Screenshot 2024-02-14 200530](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/21f147ae-2762-4b4c-8e19-01459aab7efd)
 
-  </td>
-  </tr>
-
-   <tr>
-    <td width=50%>
 
 ### ii)Write the image
 ```Python
@@ -62,16 +57,11 @@ Anaconda - Python 3.7
     image=cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',0)
     cv2.imwrite('demos.jpg',image)
 ```
-  </td>
-  <td>
-
+ 
 ### OUTPUT:
 
 ![Screenshot 2024-02-14 111459](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/fd77bd08-b104-4a08-9d61-84283f16a0bb)
-  </td>
-  </tr>
-  <tr>
-    <td width=50%>
+
 
 ### iii)Shape of the Image
 ```Python
@@ -79,15 +69,10 @@ Anaconda - Python 3.7
     image=cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',1)
     print(image.shape)
 ```
-  </td>
-  <td>
-
+ 
 ### OUTPUT:
 ![Screenshot 2024-02-14 111509](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/c87c78bd-e3d8-4e5a-b93c-e8025dce101a)
-  </td>
-  </tr>
-  <tr>
-    <td>
+  
       
 ### iv)Access rows and columns
 ```Python
@@ -104,17 +89,11 @@ Anaconda - Python 3.7
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 ```
-  </td>
-  <td width="50%">
-
+ 
 ### OUTPUT:
 
  ![Screenshot 2024-02-14 111621](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/3a70e210-6d5c-41c6-a631-38daa8bcaf89)
-  </td>
-  </tr>
-  <tr>
-    <td width=50%>
-      
+  
 ### v)Cut and paste portion of image
 
  ```Python
@@ -127,8 +106,7 @@ Anaconda - Python 3.7
     cv2.waitKey(0)
     cv2.destroyAllWindows()
 ```
-  </td>
-  <td>
+ 
     
 ### OUTPUT:
 
