@@ -30,9 +30,7 @@ Anaconda - Python 3.7
 ### Developed By: Sanjay G
 ### Register Number: 212222230131
 ```
-<table>
-  <tr>
-    <td width=50%>
+
 
 ### i) Read and display the image
 ```Python
@@ -53,7 +51,7 @@ Anaconda - Python 3.7
   </tr>
 
    <tr>
-    <td width=60%>
+    <td width=50%>
 
   
 ### ii)Write the image
@@ -62,8 +60,6 @@ Anaconda - Python 3.7
     image=cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',0)
     cv2.imwrite('demos.jpg',image)
 ```
-  </td>
-  <td>
 
 ### OUTPUT:
 
