@@ -49,6 +49,11 @@ Anaconda - Python 3.7
 ### OUTPUT:
 
  ![Screenshot 2024-02-14 200530](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/21f147ae-2762-4b4c-8e19-01459aab7efd)
+</td>
+  </tr>
+
+   <tr>
+    <td width=60%>
 
   
 ### ii)Write the image
