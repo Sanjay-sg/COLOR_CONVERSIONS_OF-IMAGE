@@ -14,21 +14,31 @@ iv)To perform the color conversion between RGB, BGR, HSV, and YCbCr color models
 ## Software Required:
 Anaconda - Python 3.7
 ## Algorithm:
-### Step1: Choose an image and save it as a filename.jpg ,
-### Step2: Use imread(filename, flags) to read the file.
-### Step3: Use imshow(window_name, image) to display the image.
-### Step4: Use imwrite(filename, image) to write the image.
-### Step5: End the program and close the output image windows.
-### Step6: Convert BGR and RGB to HSV and GRAY
-### Step7: Convert HSV to RGB and BGR
-### Step8: Convert RGB and BGR to YCrCb
-### Step9: Split and Merge RGB Image
-### Step10: Split and merge HSV Image
+### Step 1: 
+Choose an image and save it as a filename.jpg.
+### Step 2: 
+Use imread(filename, flags) to read the file.
+### Step 3: 
+Use imshow(window_name, image) to display the image.
+### Step 4: 
+Use imwrite(filename, image) to write the image.
+### Step 5: 
+End the program and close the output image windows.
+### Step 6: 
+Convert BGR and RGB to HSV and GRAY
+### Step 7: 
+Convert HSV to RGB and BGR
+### Step 8: 
+Convert RGB and BGR to YCrCb
+### Step 9: 
+Split and Merge RGB Image
+### Step 10: 
+Split and merge HSV Image
 
 ##### Program:
 ```
-### Developed By: Sanjay G
-### Register Number: 212222230131
+Developed By: Sanjay G
+Register Number:212222230131
 ```
 <table>
   <tr>
@@ -36,81 +46,106 @@ Anaconda - Python 3.7
 
 ### i) Read and display the image
 ```Python
-    import cv2
-    image=cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',1)
-    image=cv2.resize(image,(400,300))
-    cv2.imshow('Original Image',image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+import cv2
+image=cv2.imread('scenery.jpg',1)
+image=cv2.resize(image,(400,300))
+cv2.imshow('VINODKUMAR',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ``` 
   </td>
   <td>
 
 ### OUTPUT:
 
- ![Screenshot 2024-02-14 200530](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/21f147ae-2762-4b4c-8e19-01459aab7efd)
+![Alt text](image.png)
 
+  </td>
+  </tr>
+
+   <tr>
+    <td width=50%>
 
 ### ii)Write the image
 ```Python
-    import cv2
-    image=cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',0)
-    cv2.imwrite('demos.jpg',image)
+import cv2
+image=cv2.imread('scenery.jpg',0)
+cv2.imwrite('news.jpg',image)
 ```
- 
+  </td>
+  <td>
+
 ### OUTPUT:
 
-![Screenshot 2024-02-14 111459](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/fd77bd08-b104-4a08-9d61-84283f16a0bb)
+![Alt text](image-3.png)
 
+  </td>
+  </tr>
+  <tr>
+    <td width=50%>
 
 ### iii)Shape of the Image
 ```Python
-    import cv2
-    image=cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',1)
-    print(image.shape)
+import cv2
+image=cv2.imread('scenery.jpg',1)
+print(image.shape)
 ```
- 
+  </td>
+  <td>
+
 ### OUTPUT:
-![Screenshot 2024-02-14 111509](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/c87c78bd-e3d8-4e5a-b93c-e8025dce101a)
-  
+![Alt text](image-4.png)
+
+
+  </td>
+  </tr>
+  <tr>
+    <td>
       
 ### iv)Access rows and columns
 ```Python
-    import random
-    import cv2
-    image=cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',1)
-    image=cv2.resize(image,(400,400))
-    for i in range (150,200):
-      for j in range(image.shape[1]):
-          image[i][j]=[random.randint(0,255),
-                       random.randint(0,255),
-                       random.randint(0,255)] 
-    cv2.imshow('part image',image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+import random
+import cv2
+image=cv2.imread('scenery.jpg',1)
+image=cv2.resize(image,(400,400))
+for i in range (150,200):
+for j in range(image.shape[1]):
+       image[i][j]=[random.randint(0,255),
+                    random.randint(0,255),
+                    random.randint(0,255)] 
+cv2.imshow('part image',image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
 ```
- 
-### OUTPUT:
+  </td>
+  <td width="50%">
 
- ![Screenshot 2024-02-14 111621](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/3a70e210-6d5c-41c6-a631-38daa8bcaf89)
-  
+### OUTPUT:
+![Screenshot (292)](image-1.png)
+
+  </td>
+  </tr>
+  <tr>
+    <td width=50%>
+      
 ### v)Cut and paste portion of image
 
  ```Python
-    import cv2
-    image=cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',1)
-    image=cv2.resize(image,(400,400))
-    tag =image[150:200,110:160]
-    image[110:160,150:200] = tag
-    cv2.imshow('partimage1',image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
+ import cv2
+ image=cv2.imread('scenery.jpg',1)
+ image=cv2.resize(image,(400,400))
+ tag =image[150:200,110:160]
+ image[110:160,150:200] = tag
+ cv2.imshow('partimage1',image)
+ cv2.waitKey(0)
+ cv2.destroyAllWindows()
 ```
- 
+  </td>
+  <td>
     
 ### OUTPUT:
+![Alt text](image-5.png)
 
-![Screenshot 2024-02-14 111837](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/7d261088-5eeb-47dc-ad1b-972901b86999)
   </td>
   </tr>
 </table>
@@ -118,7 +153,7 @@ Anaconda - Python 3.7
 ### vi) BGR and RGB to HSV and GRAY
 ```Python
 import cv2
-img = cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',1)
+img = cv2.imread('scenery.jpg',1)
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original Image',img)
 
@@ -139,14 +174,14 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
-
-![Screenshot 2024-02-14 112235](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/5dcd3ab1-78d0-4ad4-9571-7db860323bbd)
+![Alt text](image-12.png)
+![Alt text](image-13.png)
 
 
 ### vii) HSV to RGB and BGR
 ```Python
 import cv2
-img = cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg')
+img = cv2.imread('scenery.jpg')
 img = cv2.resize(img,(300,200))
 
 img = cv2.cvtColor(img,cv2.COLOR_BGR2HSV)
@@ -163,14 +198,14 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
+![Alt text](image-7.png)
 
-![Screenshot 2024-02-14 112829](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/5e5723a0-d127-416d-a473-72a415dd12a8)
 
 
 ### viii) RGB and BGR to YCrCb
 ```Python
 import cv2
-img = cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg')
+img = cv2.imread('scenery.jpg')
 img = cv2.resize(img,(300,200))
 cv2.imshow('Original RGB Image',img)
 
@@ -186,13 +221,14 @@ cv2.destroyAllWindows()
 
 ### OUTPUT:
 
-![Screenshot 2024-02-14 112951](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/709cd998-d9ef-4293-b4cb-7a881e8fc55d)
+![Alt text](image-11.png)
+
 
 
 ### ix) Split and merge RGB Image
 ```Python
 import cv2
-img = cv2.imread('pristine-reflective-lake-show-image-260nw-2305485315.jpg',1)
+img = cv2.imread('scenery.jpg',1)
 img = cv2.resize(img,(300,200))
 
 R = img[:,:,2]
@@ -211,14 +247,15 @@ cv2.destroyAllWindows()
 ```
 
 ### OUTPUT:
+![Alt text](image-9.png)
 
-![Screenshot 2024-02-14 113247](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/92cc2059-7eb4-4da4-b014-65069e24309e)
+
 
 
 ### x) Split and merge HSV Image
 ```Python
 import cv2
-img = cv2.imread("pristine-reflective-lake-show-image-260nw-2305485315.jpg",1)
+img = cv2.imread("scenery.jpg",1)
 img = cv2.resize(img,(300,200))
 img=cv2.cvtColor(img,cv2.COLOR_RGB2HSV)
 
@@ -237,15 +274,8 @@ cv2.destroyAllWindows()
 
 ### OUTPUT:
 
-![Screenshot 2024-02-14 113515](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/8f673325-ff01-4f53-8d05-fe5596340482)
+![Alt text](image-10.png)
 
 
 ## Result:
 Thus the images are read, displayed, and written ,and color conversion was performed between RGB, HSV and YCbCr color models successfully using the python program.
-
-
-
-
-
-
-
