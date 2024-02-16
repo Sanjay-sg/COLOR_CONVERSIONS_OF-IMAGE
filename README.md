@@ -50,12 +50,7 @@ Anaconda - Python 3.7
 
  ![Screenshot 2024-02-14 200530](https://github.com/Mathiofficial/COLOR_CONVERSIONS_OF-IMAGE/assets/118787327/21f147ae-2762-4b4c-8e19-01459aab7efd)
 
-  </td>
-  </tr>
-
-   <tr>
-    <td width=50%>
-
+  
 ### ii)Write the image
 ```Python
     import cv2
